@@ -1,5 +1,5 @@
 :root{
-    --main-color: #121f42;
+    --main-color: #09539f;
 }
 @font-face{
     font-family: bruumBoldFont;
@@ -102,7 +102,7 @@ header .right-part .nav2{
 header .nav2 ul li{
     position: relative;
     cursor: pointer;
-    
+
 }
 header .nav2 ul li:not(:last-child)::after {
     display: none;
@@ -154,7 +154,7 @@ header .nav3 ul li:not(:last-child)::after {
 /* end header */
 
 .counter-top{
-    background-color: #000;
+    background-color:#09539f;
     padding: 20px 30px;
 }
 .counter-top .btns {
@@ -165,8 +165,7 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .counter-top .btn{
     min-height: 35px;
-    color: #f1efef;
-    background-color:#987b41;
+    background-color:#f1f1f2;
     border: none;
     width: 75%;
     display: flex;
@@ -175,9 +174,15 @@ header .nav3 ul li:not(:last-child)::after {
     margin: auto;
     /* border-radius: 0; */
 }
+.contact-text .btn-danger{
+  background-color: #09539f;
+}
 .counter-top .btn a{
     text-decoration: none;
-    color: #e2eef7;
+    color: #000;
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 900;
 }
 .counter-top .btns .btn-success{
     background-color: #3f3f3f;
@@ -198,9 +203,9 @@ header .nav3 ul li:not(:last-child)::after {
 .counter h2{
     font-family: bruumBoldFont;
     color: var(--main-color);
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
-    margin: 5px;
+    margin-bottom: 10px;
 }
 .counter i{
     font-size: 35px;
@@ -208,6 +213,7 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .counter img{
     margin: 10px auto;
+    height: 30px;
 }
 .counter p{
     color: #888686;
@@ -232,6 +238,30 @@ header .nav3 ul li:not(:last-child)::after {
     font-size: 24px;
     line-height: 35px;
     font-weight: bold;
+}
+.text-red{
+  font-family: bruumBoldFont;
+}
+.text-red p{
+  margin-top: 10px;
+  color: #818282;
+}
+.keynotes img{
+  height: 255px;
+}
+.keynotes .image{
+  padding: 10px;
+  height: 410px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 2px 2px #eee;
+}
+.keynotes .image h5{
+  font-family: bruumBoldFont;
+  margin-top: 15px;
+}
+.keynotes .image p{
+  color: #888686;
+  font-size: 15px;
 }
 .cover.coverLeft{
     background-position: left;
@@ -709,9 +739,9 @@ footer .logo span{
     font-family: boldFont;
 }
 footer h5{
-    color: #ed2027;
+    color:  var(--main-color);
     font-size: 17px;
-    font-weight: bold;
+    font-family: bruumBoldFont;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
@@ -728,7 +758,7 @@ footer .footer-side .apps{
 }
 footer .footer-side .apps h4{
     font-size: 18px;
-} 
+}
 footer .footer-side h4 a{
     color: #ed2027;
 }
@@ -833,10 +863,16 @@ footer form .btn{
 }
  .btn-danger{
     border-radius: 0;
-    background-color: #ff2020;
+    background-color: #987b41;
     border: none;
     font-size: 14px;
-    color: #ffe9e9;
+    color: #fff;
+}
+.btn-danger a{
+  color: #fff;
+}
+.agenda-section p{
+  font-family: bruumBoldFont;
 }
 .registration-screen .contact-text .line{
     border-bottom: 1px solid #d9d7d7;
@@ -1002,8 +1038,18 @@ footer form .btn{
     text-decoration: none;
     color: #fff;
 }
+.profile .contact-text{
+  background-color: #f1f1f2;
+  padding:35px;
+}
+.profile form input , .profile form select{
+  margin-bottom: 10px;
+}
+.profile form label,.profile form h6{
+  font-weight: bold;
+}
 .event-agenda .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-    background-color: #ff0000;
+    background-color: #09539f;
 }
 .event-agenda h5{
     margin-bottom: 20px;
@@ -1049,7 +1095,6 @@ footer form .btn{
 }
 .photo-gallery h4{
     font-family: bruumBoldFont;
-    color: #ab00d0;
     margin-bottom: 40px;
 }
 .photo-gallery .gallery{
@@ -1057,10 +1102,26 @@ footer form .btn{
     padding: 5px;
 }
 .photo-gallery h5{
-    text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 16px;
+}
+.profile h4{
+  margin: 15px 0;
+  font-family: bruumBoldFont;
+  font-size: 24px;
+  color: #0078b5;
+}
+.profile b{
+  color: #000;
+  font-family: bruumBoldFont;
+}
+.profile p{
+  font-size: 18px;
+}
+.profile ul li{
+  margin-bottom: 7px;
+  font-size: 18px;
 }
 .banner-bottom .img{
     border: 1px solid #1b75bb;
@@ -1087,7 +1148,7 @@ footer form .btn{
 }
 @media only screen and (max-width: 1284px) {
     .banner_1 .banner-footer ul{
-       
+
         transform: translateY(10px);
     }
     .banner_1 .banner-footer p{
@@ -1277,7 +1338,7 @@ footer form .btn{
         width: 80%;
         margin: 30px auto 0;
     }
-   
+
     /* start .agenda-screen */
     .agenda-screen .photo-gallery h4{
         font-size: 20px;
@@ -1296,7 +1357,7 @@ footer form .btn{
     .event-agenda h5{
         font-size: 16px;
     }
-   
+
     footer .logo{
         margin-bottom: 20px;
         text-align: center;
